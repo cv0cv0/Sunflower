@@ -10,6 +10,7 @@ plugins {
 
 android {
     compileSdkVersion(28)
+    buildToolsVersion("28.0.3")
     dataBinding { isEnabled = true }
     defaultConfig {
         applicationId = "me.gr.sunflower"
@@ -45,10 +46,10 @@ dependencies {
     implementation(kotlin("stdlib-jdk7", KotlinCompilerVersion.VERSION))
     implementation("androidx.appcompat:appcompat:$supportLibraryVersion")
     implementation("androidx.constraintlayout:constraintlayout:2.0.0-alpha2")
-    implementation("androidx.core:core-ktx:1.0.0-rc02")
+    implementation("androidx.core:core-ktx:1.0.0")
     implementation("androidx.legacy:legacy-support-v4:$supportLibraryVersion")
     implementation("androidx.recyclerview:recyclerview:$supportLibraryVersion")
-    implementation("androidx.lifecycle:lifecycle-extensions:2.0.0-rc01")
+    implementation("androidx.lifecycle:lifecycle-extensions:2.0.0")
     implementation("androidx.room:room-runtime:$roomVersion")
     implementation("android.arch.navigation:navigation-fragment-ktx:$navigationVersion")
     implementation("android.arch.navigation:navigation-ui-ktx:$navigationVersion")
@@ -63,5 +64,5 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-contrib:$espressoVersion")
     androidTestImplementation("androidx.test.espresso:espresso-intents:$espressoVersion")
     androidTestImplementation("androidx.test.uiautomator:uiautomator:2.2.0-alpha4")
-    androidTestImplementation("androidx.arch.core:core-testing:2.0.0-rc01")
+    androidTestImplementation("androidx.arch.core:core-testing:2.0.0")
 }
