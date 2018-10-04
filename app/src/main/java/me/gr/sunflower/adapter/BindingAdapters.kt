@@ -19,7 +19,7 @@ fun isGone(view: View, isGone: Boolean) {
 @BindingAdapter("imageUrl")
 fun imageUrl(imageView: ImageView, imageUrl: String?) {
     if (!imageUrl.isNullOrEmpty()) {
-        Glide.with(imageView.context)
+        Glide.with(imageView)
                 .load(imageUrl)
                 .transition(DrawableTransitionOptions.withCrossFade())
                 .into(imageView)

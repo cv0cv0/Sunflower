@@ -13,6 +13,7 @@ import me.gr.sunflower.util.InjectorUtils
 import me.gr.sunflower.viewmodel.PlantingListViewModel
 
 class GardenFragment : Fragment() {
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val binding = FragmentGardenBinding.inflate(inflater, container, false)
         val adapter = PlantingAdapter()
